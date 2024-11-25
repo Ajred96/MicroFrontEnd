@@ -1,0 +1,16 @@
+<!-- slide-show.component.html -->
+<div class="slide-show-container">
+  <div *ngIf="currentIndex === 0" class="slide">
+    <app-slide1></app-slide1>
+  </div>
+  <div *ngIf="currentIndex === 1" class="slide">
+    <app-slide2></app-slide2>
+  </div>
+  <div *ngIf="currentIndex === 2" class="slide">
+    <app-slide3></app-slide3>
+  </div>
+
+  <!-- Botones para avanzar y retroceder -->
+  <button class="nav-btn left" (click)="prevSlide()">←</button>
+  <button class="nav-btn right" (click)="nextSlide()">→</button>
+</div>
